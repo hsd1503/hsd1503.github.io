@@ -5,7 +5,7 @@
     <link>/publication/</link>
       <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Publications</title>
@@ -15,8 +15,24 @@
     <item>
       <title> Opportunities and Challenges in Deep Learning Methods on Electrocardiogram Data: A Systematic Review </title>
       <link>/publication/hong2020opportunities/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       <guid>/publication/hong2020opportunities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> CardioLearn: A Cloud Deep Learning Service for Cardiac Disease Detection from Electrocardiogram</title>
+      <link>/publication/hong2020cardiolearn/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/hong2020cardiolearn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CHEER: Rich Model Helps Poor Model via Knowledge Infusion</title>
+      <link>/publication/cao2020cheer/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/cao2020cheer/</guid>
       <description></description>
     </item>
     

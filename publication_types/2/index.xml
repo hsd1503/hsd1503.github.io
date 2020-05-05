@@ -5,12 +5,28 @@
     <link>/publication_types/2/</link>
       <atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 04 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>2</title>
       <link>/publication_types/2/</link>
     </image>
+    
+    <item>
+      <title> Opportunities and Challenges in Deep Learning Methods on Electrocardiogram Data: A Systematic Review </title>
+      <link>/publication/hong2020opportunities/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/hong2020opportunities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CHEER: Rich Model Helps Poor Model via Knowledge Infusion</title>
+      <link>/publication/cao2020cheer/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/cao2020cheer/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title> Combining Deep Neural Networks and Engineered Features for Cardiac Arrhythmia Detection from ECG Recordings </title>
