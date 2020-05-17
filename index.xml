@@ -5,12 +5,20 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Shenda Hong</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 15 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Shenda Hong</title>
       <link>/</link>
     </image>
+    
+    <item>
+      <title> HOLMES: Health OnLine Model Ensemble Serving for Deep Learning Models in Intensive Care Units </title>
+      <link>/publication/hong2020holmes/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/hong2020holmes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title> Opportunities and Challenges of Deep Learning Methods for Electrocardiogram Data: A Systematic Review </title>
