@@ -1,22 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2 | Shenda Hong</title>
+    <title>2 | Shenda Hong, Ph.D.</title>
     <link>/publication_types/2/</link>
       <atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 25 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 17 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <url>img/map[gravatar:%!s(bool=false) shape:square]</url>
       <title>2</title>
       <link>/publication_types/2/</link>
     </image>
+    
+    <item>
+      <title> Knowledge-Shot Learning: An Interpretable Deep Model for Classifying Imbalanced Electrocardiography Data </title>
+      <link>/publication/chou2020ksl/</link>
+      <pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/chou2020ksl/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title> CardioID: Learning to Identification from Electrocardiogram Data </title>
       <link>/publication/hong2020cardioid/</link>
       <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
       <guid>/publication/hong2020cardioid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life negative events and depressive symptoms: the China Longitudinal Ageing Social Survey</title>
+      <link>/publication/wang2020life/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/wang2020life/</guid>
       <description></description>
     </item>
     

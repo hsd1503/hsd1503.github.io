@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1 | Shenda Hong</title>
+    <title>1 | Shenda Hong, Ph.D.</title>
     <link>/publication_types/1/</link>
       <atom:link href="/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <url>img/map[gravatar:%!s(bool=false) shape:square]</url>
       <title>1</title>
       <link>/publication_types/1/</link>
     </image>
     
     <item>
+      <title>ViVA: Semi-supervised Visualization via Variational Autoencoder</title>
+      <link>/publication/an2020viva/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/an2020viva/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title> HOLMES: Health OnLine Model Ensemble Serving for Deep Learning Models in Intensive Care Units </title>
       <link>/publication/hong2020holmes/</link>
-      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Jul 2020 01:00:00 +0000</pubDate>
       <guid>/publication/hong2020holmes/</guid>
       <description></description>
     </item>
@@ -89,6 +97,14 @@
       <link>/publication/hong2017assess/</link>
       <pubDate>Tue, 23 May 2017 00:00:00 +0000</pubDate>
       <guid>/publication/hong2017assess/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> ENCASE: an ENsemble ClASsifiEr for ECG Classification Using Expert Features and Deep Neural Networks</title>
+      <link>/publication/full/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/full/</guid>
       <description></description>
     </item>
     
