@@ -5,7 +5,7 @@
     <link>/publication/</link>
       <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 13 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 17 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:square]</url>
       <title>Publications</title>
@@ -13,10 +13,34 @@
     </image>
     
     <item>
+      <title> Predicting COVID-19 Disease Progression and Patient Outcomes based on Temporal Deep Learning </title>
+      <link>/publication/sun2020covid/</link>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/sun2020covid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> Artificial Intelligence and Clinical Stability After the Norwood Operation </title>
+      <link>/publication/alaa2020norwood/</link>
+      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/alaa2020norwood/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Gated Temporal Convolutional Neural Network and Expert Features for Diagnosing and Explaining Physiological Time Series: A Case Study on Heart Rates</title>
       <link>/publication/hong2020tegnet/</link>
       <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
       <guid>/publication/hong2020tegnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> Deep Active Learning for Interictal Ictal Injury Continuum EEG Patterns </title>
+      <link>/publication/ge2020active/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/ge2020active/</guid>
       <description></description>
     </item>
     
