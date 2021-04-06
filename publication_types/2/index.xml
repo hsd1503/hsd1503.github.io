@@ -5,12 +5,20 @@
     <link>/publication_types/2/</link>
       <atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 26 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:square]</url>
       <title>2</title>
       <link>/publication_types/2/</link>
     </image>
+    
+    <item>
+      <title>Gated Temporal Convolutional Neural Network and Expert Features for Diagnosing and Explaining Physiological Time Series: A Case Study on Heart Rates</title>
+      <link>/publication/hong2021tegnet/</link>
+      <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/hong2021tegnet/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title> Predicting COVID-19 Disease Progression and Patient Outcomes based on Temporal Deep Learning </title>
@@ -41,14 +49,6 @@
       <link>/publication/zhou2020keen/</link>
       <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
       <guid>/publication/zhou2020keen/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gated Temporal Convolutional Neural Network and Expert Features for Diagnosing and Explaining Physiological Time Series: A Case Study on Heart Rates</title>
-      <link>/publication/hong2020tegnet/</link>
-      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/hong2020tegnet/</guid>
       <description></description>
     </item>
     
