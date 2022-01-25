@@ -5,7 +5,7 @@
     <link>/publication/</link>
       <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 26 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 22 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:square]</url>
       <title>Publications</title>
@@ -13,274 +13,371 @@
     </image>
     
     <item>
-      <title>Gated Temporal Convolutional Neural Network and Expert Features for Diagnosing and Explaining Physiological Time Series: A Case Study on Heart Rates</title>
-      <link>/publication/hong2021tegnet/</link>
-      <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>/publication/hong2021tegnet/</guid>
+      <title>Basiliximab for Steroid-refractory Acute Graft-versus-host Disease: A Real-world Analysis</title>
+      <link>/publication/2022/2022ajh/</link>
+      <pubDate>Sat, 22 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>/publication/2022/2022ajh/</guid>
       <description></description>
     </item>
     
     <item>
-      <title> Predicting COVID-19 Disease Progression and Patient Outcomes based on Temporal Deep Learning </title>
-      <link>/publication/sun2021covid/</link>
-      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>/publication/sun2021covid/</guid>
+      <title>Measuring Expertise in Identifying Interictal Epileptiform Discharges</title>
+      <link>/publication/2022/2022eeg_expertise/</link>
+      <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>/publication/2022/2022eeg_expertise/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Predicting Risk of Mortality in Pediatric ICU based on Ensemble Step-wise Feature Selection</title>
-      <link>/publication/hong2021pic/</link>
-      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>/publication/hong2021pic/</guid>
+      <title>Intra-Inter Subject Self-supervised Learning for Multivariate Cardiac Signals</title>
+      <link>/publication/2022/2022isl/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:03 +0000</pubDate>
+      <guid>/publication/2022/2022isl/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Artificial-Intelligence Enhanced Mobile System for Cardiovascular Health Management</title>
-      <link>/publication/fu2021management/</link>
-      <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>/publication/fu2021management/</guid>
+      <title> GRP-FED: Addressing Client Imbalance in Federated Learning via Global-Regularized Personalization </title>
+      <link>/publication/2022/2022federated/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:01 +0000</pubDate>
+      <guid>/publication/2022/2022federated/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hypergraph Contrastive Learning for Electronic Health Records</title>
+      <link>/publication/2022/2022hcl/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:01 +0000</pubDate>
+      <guid>/publication/2022/2022hcl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Practical Lessons of 12-lead ECG Classification: Meta-Analysis of Methods from PhysioNet/Computing in Cardiology Challenge 2020</title>
+      <link>/publication/2022/2022fp/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:01 +0000</pubDate>
+      <guid>/publication/2022/2022fp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Classifying Vaguely Labeled Data Based on Evidential Fusion</title>
+      <link>/publication/2022/2022vague/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2022/2022vague/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predicting Neurological Outcome in Comatose Patients after Cardiac Arrest with Multiscale Deep Neural Networks</title>
+      <link>/publication/2021/2021multiscale/</link>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021/2021multiscale/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meta-analysis of interleukin-2 receptor antagonists as a second-line treatment for steroid-refractory acute graft-versus-host disease</title>
+      <link>/publication/2021/2021meta/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021/2021meta/</guid>
+      <description>&lt;!-- \item  \textbf{[FRONT IMMUNOL 2021, IF=7.561]} Meng-Zhu Shen, Jing-Xia Li, Xiao-Hui Zhang, Lan-Ping Xu, Yu Wang, Kai-Yan Liu, Xiao-Jun Huang, Shen-Da Hong*, Xiao-Dong Mo*. Meta-analysis of interleukin-2 receptor antagonists as a second-line treatment for steroid-refractory acute graft-versus-host disease. Frontiers in Immunology. --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Identifying the Origin of Outflow Tract Ventricular Arrhythmias Based on Printed Electrocardiographic Records with an Artificial Intelligence Algorithm</title>
+      <link>/publication/2021/2021hrs/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021/2021hrs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> Personalized Vital Signs Control Based on Continuous Action-Space Reinforcement Learning with Supervised Experience </title>
+      <link>/publication/2021/2021pvsc/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021/2021pvsc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> TE-ESN: Time Encoding Echo State Network for Prediction Based on Irregularly Sampled Time Series Data </title>
+      <link>/publication/2021/2021esn/</link>
+      <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021/2021esn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> Pay Attention to Evolution: Time Series Forecasting with Deep Graph-Evolution Learning	 </title>
+      <link>/publication/2021/2021regenn/</link>
+      <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021/2021regenn/</guid>
       <description></description>
     </item>
     
     <item>
       <title> AID: Active Distillation Machine to Leverage Pre-Trained Black-Box Models in Private Data Settings	 </title>
-      <link>/publication/hoang2021aid/</link>
-      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>/publication/hoang2021aid/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> Artificial Intelligence and Clinical Stability After the Norwood Operation </title>
-      <link>/publication/alaa2020norwood/</link>
-      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/alaa2020norwood/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> Addressing Noise and Skewness in Interpretable Health-Condition Assessment by Learning Model Confidence </title>
-      <link>/publication/zhou2020keen/</link>
-      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/zhou2020keen/</guid>
+      <link>/publication/2021/2021aid/</link>
+      <pubDate>Mon, 19 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021/2021aid/</guid>
       <description></description>
     </item>
     
     <item>
       <title> Deep Active Learning for Interictal Ictal Injury Continuum EEG Patterns </title>
-      <link>/publication/ge2020active/</link>
-      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/ge2020active/</guid>
+      <link>/publication/2021/2021active/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021/2021active/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gated Temporal Convolutional Neural Network and Expert Features for Diagnosing and Explaining Physiological Time Series: A Case Study on Heart Rates</title>
+      <link>/publication/2021/2021tegnet/</link>
+      <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021/2021tegnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> Predicting COVID-19 Disease Progression and Patient Outcomes based on Temporal Deep Learning </title>
+      <link>/publication/2021/2021covid/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021/2021covid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predicting Risk of Mortality in Pediatric ICU based on Ensemble Step-wise Feature Selection</title>
+      <link>/publication/2021/2021pic/</link>
+      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021/2021pic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Artificial-Intelligence Enhanced Mobile System for Cardiovascular Health Management</title>
+      <link>/publication/2021/2021management/</link>
+      <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021/2021management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> Artificial Intelligence and Clinical Stability After the Norwood Operation </title>
+      <link>/publication/2020/2020norwood/</link>
+      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2020/2020norwood/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> Addressing Noise and Skewness in Interpretable Health-Condition Assessment by Learning Model Confidence </title>
+      <link>/publication/2020/2020keen/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2020/2020keen/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ViVA: Semi-supervised Visualization via Variational Autoencoder</title>
-      <link>/publication/an2020viva/</link>
+      <link>/publication/2020/2020viva/</link>
       <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/an2020viva/</guid>
+      <guid>/publication/2020/2020viva/</guid>
       <description></description>
     </item>
     
     <item>
       <title> HOLMES: Health OnLine Model Ensemble Serving for Deep Learning Models in Intensive Care Units </title>
-      <link>/publication/hong2020holmes/</link>
+      <link>/publication/2020/2020holmes/</link>
       <pubDate>Fri, 17 Jul 2020 01:00:00 +0000</pubDate>
-      <guid>/publication/hong2020holmes/</guid>
+      <guid>/publication/2020/2020holmes/</guid>
       <description></description>
     </item>
     
     <item>
       <title> Knowledge-Shot Learning: An Interpretable Deep Model for Classifying Imbalanced Electrocardiography Data </title>
-      <link>/publication/chou2020ksl/</link>
+      <link>/publication/2020/2020ksl/</link>
       <pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/chou2020ksl/</guid>
+      <guid>/publication/2020/2020ksl/</guid>
       <description></description>
     </item>
     
     <item>
       <title> CardioID: Learning to Identification from Electrocardiogram Data </title>
-      <link>/publication/hong2020cardioid/</link>
+      <link>/publication/2020/2020cardioid/</link>
       <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/hong2020cardioid/</guid>
+      <guid>/publication/2020/2020cardioid/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Life negative events and depressive symptoms: the China Longitudinal Ageing Social Survey</title>
-      <link>/publication/wang2020life/</link>
+      <link>/publication/2020/2020life/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/wang2020life/</guid>
+      <guid>/publication/2020/2020life/</guid>
       <description></description>
     </item>
     
     <item>
       <title> Opportunities and Challenges of Deep Learning Methods for Electrocardiogram Data: A Systematic Review </title>
-      <link>/publication/hong2020opportunities/</link>
+      <link>/publication/2020/2020opportunities/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/hong2020opportunities/</guid>
+      <guid>/publication/2020/2020opportunities/</guid>
       <description></description>
     </item>
     
     <item>
       <title> CardioLearn: A Cloud Deep Learning Service for Cardiac Disease Detection from Electrocardiogram</title>
-      <link>/publication/hong2020cardiolearn/</link>
+      <link>/publication/2020/2020cardiolearn/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/hong2020cardiolearn/</guid>
+      <guid>/publication/2020/2020cardiolearn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CHEER: Rich Model Helps Poor Model via Knowledge Infusion</title>
-      <link>/publication/cao2020cheer/</link>
+      <link>/publication/2020/2020cheer/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/cao2020cheer/</guid>
+      <guid>/publication/2020/2020cheer/</guid>
       <description></description>
     </item>
     
     <item>
       <title> MINA: Multilevel Knowledge-Guided Attention for Modeling Electrocardiography Signals </title>
-      <link>/publication/hong2019mina/</link>
+      <link>/publication/2019/2019mina/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/hong2019mina/</guid>
+      <guid>/publication/2019/2019mina/</guid>
       <description></description>
     </item>
     
     <item>
       <title> RDPD: Rich Data Helps Poor Data via Imitation </title>
-      <link>/publication/hong2019rdpd/</link>
+      <link>/publication/2019/2019rdpd/</link>
       <pubDate>Sat, 10 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/hong2019rdpd/</guid>
+      <guid>/publication/2019/2019rdpd/</guid>
       <description></description>
     </item>
     
     <item>
       <title> K-margin-based Residual-convolution-recurrent Neural Network for Atrial Fibrillation Detection </title>
-      <link>/publication/zhou2019kmargin/</link>
+      <link>/publication/2019/2019kmargin/</link>
       <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/zhou2019kmargin/</guid>
+      <guid>/publication/2019/2019kmargin/</guid>
       <description></description>
     </item>
     
     <item>
       <title> Combining Deep Neural Networks and Engineered Features for Cardiac Arrhythmia Detection from ECG Recordings </title>
-      <link>/publication/hong2019combining/</link>
+      <link>/publication/2019/2019combining/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/hong2019combining/</guid>
+      <guid>/publication/2019/2019combining/</guid>
       <description></description>
     </item>
     
     <item>
       <title> Knowledge Guided Multi-instance Multi-label Learning via Neural Networks in Medicines Prediction </title>
-      <link>/publication/shang2018knowledge/</link>
+      <link>/publication/2018/2018knowledge/</link>
       <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/shang2018knowledge/</guid>
+      <guid>/publication/2018/2018knowledge/</guid>
       <description></description>
     </item>
     
     <item>
       <title> Finding the Typical Communication Black Hole in Big Data Environment </title>
-      <link>/publication/zhang2017finding/</link>
+      <link>/publication/2017/2017finding/</link>
       <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/zhang2017finding/</guid>
+      <guid>/publication/2017/2017finding/</guid>
       <description></description>
     </item>
     
     <item>
       <title> REBUILD: Graph Embedding Based Method for User Social Role Identity on Mobile Communication Network </title>
-      <link>/publication/zhang2017rebuild/</link>
+      <link>/publication/2017/2017rebuild/</link>
       <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/zhang2017rebuild/</guid>
+      <guid>/publication/2017/2017rebuild/</guid>
       <description></description>
     </item>
     
     <item>
       <title> Event2vec: Learning representations of events on temporal sequences </title>
-      <link>/publication/hong2017event/</link>
+      <link>/publication/2017/2017event/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/hong2017event/</guid>
+      <guid>/publication/2017/2017event/</guid>
       <description></description>
     </item>
     
     <item>
       <title> Assessing death risk of patients with cardiovascular disease from long-term electrocardiogram streams summarization </title>
-      <link>/publication/hong2017assess/</link>
+      <link>/publication/2017/2017assess/</link>
       <pubDate>Tue, 23 May 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/hong2017assess/</guid>
+      <guid>/publication/2017/2017assess/</guid>
       <description></description>
     </item>
     
     <item>
       <title> ENCASE: an ENsemble ClASsifiEr for ECG Classification Using Expert Features and Deep Neural Networks</title>
-      <link>/publication/full/</link>
+      <link>/publication/2017/2017encase/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/full/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> ENCASE: an ENsemble ClASsifiEr for ECG Classification Using Expert Features and Deep Neural Networks</title>
-      <link>/publication/hong2017encase/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/hong2017encase/</guid>
+      <guid>/publication/2017/2017encase/</guid>
       <description></description>
     </item>
     
     <item>
       <title> FVBM: A Filter-Verification-Based Method for Finding Top-k Closeness Centrality on Dynamic Social Networks </title>
-      <link>/publication/lin2016fvbm/</link>
+      <link>/publication/2016/2016fvbm/</link>
       <pubDate>Fri, 23 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/lin2016fvbm/</guid>
+      <guid>/publication/2016/2016fvbm/</guid>
       <description></description>
     </item>
     
     <item>
       <title> Real-time anomaly detection over ECG data stream based on component spectrum </title>
-      <link>/publication/wu2016real/</link>
+      <link>/publication/2016/2016real/</link>
       <pubDate>Fri, 23 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/wu2016real/</guid>
+      <guid>/publication/2016/2016real/</guid>
       <description></description>
     </item>
     
     <item>
       <title> A novel method for mining semantics from patterns over ecg data </title>
-      <link>/publication/qiu2016novel/</link>
+      <link>/publication/2016/2016novel/</link>
       <pubDate>Tue, 29 Mar 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/qiu2016novel/</guid>
+      <guid>/publication/2016/2016novel/</guid>
       <description></description>
     </item>
     
     <item>
       <title> Combining Multiple Concurrent Physiological Streams to Assessing Patients Condition </title>
-      <link>/publication/hong2016combining/</link>
+      <link>/publication/2016/2016combining/</link>
       <pubDate>Tue, 29 Mar 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/hong2016combining/</guid>
+      <guid>/publication/2016/2016combining/</guid>
       <description></description>
     </item>
     
     <item>
       <title> A Segment-Wise Method for Pseudo Periodic Time Series Prediction </title>
-      <link>/publication/yin2014segment/</link>
+      <link>/publication/2016/2014segment/</link>
       <pubDate>Fri, 19 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/yin2014segment/</guid>
+      <guid>/publication/2016/2014segment/</guid>
       <description></description>
     </item>
     
     <item>
       <title> SPG-Suite: Forecasting Method Towards Pseudo Periodic Time Series </title>
-      <link>/publication/hong2014ndbc/</link>
+      <link>/publication/2016/2014ndbc/</link>
       <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/hong2014ndbc/</guid>
+      <guid>/publication/2016/2014ndbc/</guid>
       <description></description>
     </item>
     
     <item>
       <title> Finding vacant taxis using large scale GPS traces </title>
-      <link>/publication/qiu2014finding/</link>
+      <link>/publication/2016/2014finding/</link>
       <pubDate>Mon, 16 Jun 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/qiu2014finding/</guid>
+      <guid>/publication/2016/2014finding/</guid>
       <description></description>
     </item>
     
