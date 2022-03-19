@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Shenda Hong, Ph.D.</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 22 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Mar 2022 00:00:01 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:square]</url>
       <title>Shenda Hong, Ph.D.</title>
@@ -13,10 +13,26 @@
     </image>
     
     <item>
+      <title>HITS: Binarizing Physiological Time Series with Deep Hashing Neural Network</title>
+      <link>/publication/2022/2022hits/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:01 +0000</pubDate>
+      <guid>/publication/2022/2022hits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Basiliximab for Steroid-refractory Acute Graft-versus-host Disease: A Real-world Analysis</title>
       <link>/publication/2022/2022ajh/</link>
       <pubDate>Sat, 22 Jan 2022 00:00:00 +0000</pubDate>
       <guid>/publication/2022/2022ajh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Practical Lessons of 12-lead ECG Classification: Meta-Analysis of Methods from PhysioNet/Computing in Cardiology Challenge 2020</title>
+      <link>/publication/2022/2022fp/</link>
+      <pubDate>Fri, 14 Jan 2022 00:00:01 +0000</pubDate>
+      <guid>/publication/2022/2022fp/</guid>
       <description></description>
     </item>
     
@@ -31,7 +47,7 @@
     <item>
       <title>Intra-Inter Subject Self-supervised Learning for Multivariate Cardiac Signals</title>
       <link>/publication/2022/2022isl/</link>
-      <pubDate>Thu, 23 Dec 2021 00:00:03 +0000</pubDate>
+      <pubDate>Sat, 01 Jan 2022 00:00:03 +0000</pubDate>
       <guid>/publication/2022/2022isl/</guid>
       <description></description>
     </item>
@@ -39,7 +55,7 @@
     <item>
       <title> GRP-FED: Addressing Client Imbalance in Federated Learning via Global-Regularized Personalization </title>
       <link>/publication/2022/2022federated/</link>
-      <pubDate>Thu, 23 Dec 2021 00:00:01 +0000</pubDate>
+      <pubDate>Sat, 01 Jan 2022 00:00:01 +0000</pubDate>
       <guid>/publication/2022/2022federated/</guid>
       <description></description>
     </item>
@@ -47,23 +63,15 @@
     <item>
       <title>Hypergraph Contrastive Learning for Electronic Health Records</title>
       <link>/publication/2022/2022hcl/</link>
-      <pubDate>Thu, 23 Dec 2021 00:00:01 +0000</pubDate>
+      <pubDate>Sat, 01 Jan 2022 00:00:01 +0000</pubDate>
       <guid>/publication/2022/2022hcl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Practical Lessons of 12-lead ECG Classification: Meta-Analysis of Methods from PhysioNet/Computing in Cardiology Challenge 2020</title>
-      <link>/publication/2022/2022fp/</link>
-      <pubDate>Thu, 23 Dec 2021 00:00:01 +0000</pubDate>
-      <guid>/publication/2022/2022fp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Classifying Vaguely Labeled Data Based on Evidential Fusion</title>
       <link>/publication/2022/2022vague/</link>
-      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       <guid>/publication/2022/2022vague/</guid>
       <description></description>
     </item>
