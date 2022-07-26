@@ -5,12 +5,20 @@
     <link>/publication/</link>
       <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Mar 2022 00:00:01 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 May 2022 00:00:03 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:square]</url>
       <title>Publications</title>
       <link>/publication/</link>
     </image>
+    
+    <item>
+      <title>Unsupervised Time-Series Representation Learning with Iterative Bilinear Temporal-Spectral Fusion</title>
+      <link>/publication/featured/2022btsf/</link>
+      <pubDate>Sun, 01 May 2022 00:00:03 +0000</pubDate>
+      <guid>/publication/featured/2022btsf/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>HITS: Binarizing Physiological Time Series with Deep Hashing Neural Network</title>
@@ -46,9 +54,9 @@
     
     <item>
       <title>Intra-Inter Subject Self-supervised Learning for Multivariate Cardiac Signals</title>
-      <link>/publication/2022/2022isl/</link>
+      <link>/publication/featured/2022isl/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:03 +0000</pubDate>
-      <guid>/publication/2022/2022isl/</guid>
+      <guid>/publication/featured/2022isl/</guid>
       <description></description>
     </item>
     
@@ -62,9 +70,9 @@
     
     <item>
       <title>Hypergraph Contrastive Learning for Electronic Health Records</title>
-      <link>/publication/2022/2022hcl/</link>
+      <link>/publication/featured/2022hcl/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:01 +0000</pubDate>
-      <guid>/publication/2022/2022hcl/</guid>
+      <guid>/publication/featured/2022hcl/</guid>
       <description></description>
     </item>
     
@@ -143,9 +151,9 @@
     
     <item>
       <title>Gated Temporal Convolutional Neural Network and Expert Features for Diagnosing and Explaining Physiological Time Series: A Case Study on Heart Rates</title>
-      <link>/publication/2021/2021tegnet/</link>
+      <link>/publication/featured/2021tegnet/</link>
       <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>/publication/2021/2021tegnet/</guid>
+      <guid>/publication/featured/2021tegnet/</guid>
       <description></description>
     </item>
     
@@ -198,10 +206,18 @@
     </item>
     
     <item>
+      <title> Opportunities and Challenges of Deep Learning Methods for Electrocardiogram Data: A Systematic Review </title>
+      <link>/publication/featured/2020opportunities/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/featured/2020opportunities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title> HOLMES: Health OnLine Model Ensemble Serving for Deep Learning Models in Intensive Care Units </title>
-      <link>/publication/2020/2020holmes/</link>
+      <link>/publication/featured/2020holmes/</link>
       <pubDate>Fri, 17 Jul 2020 01:00:00 +0000</pubDate>
-      <guid>/publication/2020/2020holmes/</guid>
+      <guid>/publication/featured/2020holmes/</guid>
       <description></description>
     </item>
     
@@ -230,18 +246,10 @@
     </item>
     
     <item>
-      <title> Opportunities and Challenges of Deep Learning Methods for Electrocardiogram Data: A Systematic Review </title>
-      <link>/publication/2020/2020opportunities/</link>
-      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/2020/2020opportunities/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title> CardioLearn: A Cloud Deep Learning Service for Cardiac Disease Detection from Electrocardiogram</title>
-      <link>/publication/2020/2020cardiolearn/</link>
+      <link>/publication/featured/2020cardiolearn/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/2020/2020cardiolearn/</guid>
+      <guid>/publication/featured/2020cardiolearn/</guid>
       <description></description>
     </item>
     
@@ -255,9 +263,9 @@
     
     <item>
       <title> MINA: Multilevel Knowledge-Guided Attention for Modeling Electrocardiography Signals </title>
-      <link>/publication/2019/2019mina/</link>
+      <link>/publication/featured/2019mina/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/2019/2019mina/</guid>
+      <guid>/publication/featured/2019mina/</guid>
       <description></description>
     </item>
     
@@ -279,9 +287,9 @@
     
     <item>
       <title> Combining Deep Neural Networks and Engineered Features for Cardiac Arrhythmia Detection from ECG Recordings </title>
-      <link>/publication/2019/2019combining/</link>
+      <link>/publication/featured/2019combining/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/2019/2019combining/</guid>
+      <guid>/publication/featured/2019combining/</guid>
       <description></description>
     </item>
     
@@ -327,9 +335,9 @@
     
     <item>
       <title> ENCASE: an ENsemble ClASsifiEr for ECG Classification Using Expert Features and Deep Neural Networks</title>
-      <link>/publication/2017/2017encase/</link>
+      <link>/publication/featured/2017encase/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/2017/2017encase/</guid>
+      <guid>/publication/featured/2017encase/</guid>
       <description></description>
     </item>
     

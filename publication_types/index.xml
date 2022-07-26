@@ -5,7 +5,7 @@
     <link>/publication_types/</link>
       <atom:link href="/publication_types/index.xml" rel="self" type="application/rss+xml" />
     <description>Publication_types</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Mar 2022 00:00:01 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 May 2022 00:00:03 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:square]</url>
       <title>Publication_types</title>
@@ -13,18 +13,18 @@
     </image>
     
     <item>
-      <title>2</title>
-      <link>/publication_types/2/</link>
-      <pubDate>Tue, 01 Mar 2022 00:00:01 +0000</pubDate>
-      <guid>/publication_types/2/</guid>
+      <title>1</title>
+      <link>/publication_types/1/</link>
+      <pubDate>Sun, 01 May 2022 00:00:03 +0000</pubDate>
+      <guid>/publication_types/1/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>1</title>
-      <link>/publication_types/1/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:03 +0000</pubDate>
-      <guid>/publication_types/1/</guid>
+      <title>2</title>
+      <link>/publication_types/2/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:01 +0000</pubDate>
+      <guid>/publication_types/2/</guid>
       <description></description>
     </item>
     

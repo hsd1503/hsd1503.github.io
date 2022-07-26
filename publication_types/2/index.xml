@@ -95,9 +95,9 @@
     
     <item>
       <title>Gated Temporal Convolutional Neural Network and Expert Features for Diagnosing and Explaining Physiological Time Series: A Case Study on Heart Rates</title>
-      <link>/publication/2021/2021tegnet/</link>
+      <link>/publication/featured/2021tegnet/</link>
       <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>/publication/2021/2021tegnet/</guid>
+      <guid>/publication/featured/2021tegnet/</guid>
       <description></description>
     </item>
     
@@ -134,6 +134,14 @@
     </item>
     
     <item>
+      <title> Opportunities and Challenges of Deep Learning Methods for Electrocardiogram Data: A Systematic Review </title>
+      <link>/publication/featured/2020opportunities/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/featured/2020opportunities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title> Knowledge-Shot Learning: An Interpretable Deep Model for Classifying Imbalanced Electrocardiography Data </title>
       <link>/publication/2020/2020ksl/</link>
       <pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate>
@@ -158,14 +166,6 @@
     </item>
     
     <item>
-      <title> Opportunities and Challenges of Deep Learning Methods for Electrocardiogram Data: A Systematic Review </title>
-      <link>/publication/2020/2020opportunities/</link>
-      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/2020/2020opportunities/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>CHEER: Rich Model Helps Poor Model via Knowledge Infusion</title>
       <link>/publication/2020/2020cheer/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
@@ -175,9 +175,9 @@
     
     <item>
       <title> Combining Deep Neural Networks and Engineered Features for Cardiac Arrhythmia Detection from ECG Recordings </title>
-      <link>/publication/2019/2019combining/</link>
+      <link>/publication/featured/2019combining/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/2019/2019combining/</guid>
+      <guid>/publication/featured/2019combining/</guid>
       <description></description>
     </item>
     

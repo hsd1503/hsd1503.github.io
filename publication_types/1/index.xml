@@ -5,7 +5,7 @@
     <link>/publication_types/1/</link>
       <atom:link href="/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:03 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 May 2022 00:00:03 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:square]</url>
       <title>1</title>
@@ -13,10 +13,18 @@
     </image>
     
     <item>
+      <title>Unsupervised Time-Series Representation Learning with Iterative Bilinear Temporal-Spectral Fusion</title>
+      <link>/publication/featured/2022btsf/</link>
+      <pubDate>Sun, 01 May 2022 00:00:03 +0000</pubDate>
+      <guid>/publication/featured/2022btsf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Intra-Inter Subject Self-supervised Learning for Multivariate Cardiac Signals</title>
-      <link>/publication/2022/2022isl/</link>
+      <link>/publication/featured/2022isl/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:03 +0000</pubDate>
-      <guid>/publication/2022/2022isl/</guid>
+      <guid>/publication/featured/2022isl/</guid>
       <description></description>
     </item>
     
@@ -30,9 +38,9 @@
     
     <item>
       <title>Hypergraph Contrastive Learning for Electronic Health Records</title>
-      <link>/publication/2022/2022hcl/</link>
+      <link>/publication/featured/2022hcl/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:01 +0000</pubDate>
-      <guid>/publication/2022/2022hcl/</guid>
+      <guid>/publication/featured/2022hcl/</guid>
       <description></description>
     </item>
     
@@ -78,25 +86,25 @@
     
     <item>
       <title> HOLMES: Health OnLine Model Ensemble Serving for Deep Learning Models in Intensive Care Units </title>
-      <link>/publication/2020/2020holmes/</link>
+      <link>/publication/featured/2020holmes/</link>
       <pubDate>Fri, 17 Jul 2020 01:00:00 +0000</pubDate>
-      <guid>/publication/2020/2020holmes/</guid>
+      <guid>/publication/featured/2020holmes/</guid>
       <description></description>
     </item>
     
     <item>
       <title> CardioLearn: A Cloud Deep Learning Service for Cardiac Disease Detection from Electrocardiogram</title>
-      <link>/publication/2020/2020cardiolearn/</link>
+      <link>/publication/featured/2020cardiolearn/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/2020/2020cardiolearn/</guid>
+      <guid>/publication/featured/2020cardiolearn/</guid>
       <description></description>
     </item>
     
     <item>
       <title> MINA: Multilevel Knowledge-Guided Attention for Modeling Electrocardiography Signals </title>
-      <link>/publication/2019/2019mina/</link>
+      <link>/publication/featured/2019mina/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/2019/2019mina/</guid>
+      <guid>/publication/featured/2019mina/</guid>
       <description></description>
     </item>
     
@@ -158,9 +166,9 @@
     
     <item>
       <title> ENCASE: an ENsemble ClASsifiEr for ECG Classification Using Expert Features and Deep Neural Networks</title>
-      <link>/publication/2017/2017encase/</link>
+      <link>/publication/featured/2017encase/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/2017/2017encase/</guid>
+      <guid>/publication/featured/2017encase/</guid>
       <description></description>
     </item>
     
