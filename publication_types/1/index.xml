@@ -21,66 +21,10 @@
     </item>
     
     <item>
-      <title>Intra-Inter Subject Self-supervised Learning for Multivariate Cardiac Signals</title>
-      <link>/publication/featured/2022isl/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:03 +0000</pubDate>
-      <guid>/publication/featured/2022isl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> GRP-FED: Addressing Client Imbalance in Federated Learning via Global-Regularized Personalization </title>
-      <link>/publication/2022/2022federated/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:01 +0000</pubDate>
-      <guid>/publication/2022/2022federated/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Hypergraph Contrastive Learning for Electronic Health Records</title>
       <link>/publication/featured/2022hcl/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:01 +0000</pubDate>
       <guid>/publication/featured/2022hcl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Identifying the Origin of Outflow Tract Ventricular Arrhythmias Based on Printed Electrocardiographic Records with an Artificial Intelligence Algorithm</title>
-      <link>/publication/2021/2021hrs/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>/publication/2021/2021hrs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> TE-ESN: Time Encoding Echo State Network for Prediction Based on Irregularly Sampled Time Series Data </title>
-      <link>/publication/2021/2021esn/</link>
-      <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>/publication/2021/2021esn/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> AID: Active Distillation Machine to Leverage Pre-Trained Black-Box Models in Private Data Settings	 </title>
-      <link>/publication/2021/2021aid/</link>
-      <pubDate>Mon, 19 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>/publication/2021/2021aid/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> Artificial Intelligence and Clinical Stability After the Norwood Operation </title>
-      <link>/publication/2020/2020norwood/</link>
-      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/2020/2020norwood/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ViVA: Semi-supervised Visualization via Variational Autoencoder</title>
-      <link>/publication/2020/2020viva/</link>
-      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/2020/2020viva/</guid>
       <description></description>
     </item>
     
@@ -109,114 +53,10 @@
     </item>
     
     <item>
-      <title> RDPD: Rich Data Helps Poor Data via Imitation </title>
-      <link>/publication/2019/2019rdpd/</link>
-      <pubDate>Sat, 10 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/2019/2019rdpd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> K-margin-based Residual-convolution-recurrent Neural Network for Atrial Fibrillation Detection </title>
-      <link>/publication/2019/2019kmargin/</link>
-      <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/2019/2019kmargin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> Knowledge Guided Multi-instance Multi-label Learning via Neural Networks in Medicines Prediction </title>
-      <link>/publication/2018/2018knowledge/</link>
-      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/2018/2018knowledge/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> Finding the Typical Communication Black Hole in Big Data Environment </title>
-      <link>/publication/2017/2017finding/</link>
-      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/2017/2017finding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> REBUILD: Graph Embedding Based Method for User Social Role Identity on Mobile Communication Network </title>
-      <link>/publication/2017/2017rebuild/</link>
-      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/2017/2017rebuild/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> Event2vec: Learning representations of events on temporal sequences </title>
-      <link>/publication/2017/2017event/</link>
-      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/2017/2017event/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> Assessing death risk of patients with cardiovascular disease from long-term electrocardiogram streams summarization </title>
-      <link>/publication/2017/2017assess/</link>
-      <pubDate>Tue, 23 May 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/2017/2017assess/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title> ENCASE: an ENsemble ClASsifiEr for ECG Classification Using Expert Features and Deep Neural Networks</title>
       <link>/publication/featured/2017encase/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       <guid>/publication/featured/2017encase/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> FVBM: A Filter-Verification-Based Method for Finding Top-k Closeness Centrality on Dynamic Social Networks </title>
-      <link>/publication/2016/2016fvbm/</link>
-      <pubDate>Fri, 23 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/2016/2016fvbm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> Real-time anomaly detection over ECG data stream based on component spectrum </title>
-      <link>/publication/2016/2016real/</link>
-      <pubDate>Fri, 23 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/2016/2016real/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> A novel method for mining semantics from patterns over ecg data </title>
-      <link>/publication/2016/2016novel/</link>
-      <pubDate>Tue, 29 Mar 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/2016/2016novel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> Combining Multiple Concurrent Physiological Streams to Assessing Patients Condition </title>
-      <link>/publication/2016/2016combining/</link>
-      <pubDate>Tue, 29 Mar 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/2016/2016combining/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> A Segment-Wise Method for Pseudo Periodic Time Series Prediction </title>
-      <link>/publication/2016/2014segment/</link>
-      <pubDate>Fri, 19 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/2016/2014segment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> Finding vacant taxis using large scale GPS traces </title>
-      <link>/publication/2016/2014finding/</link>
-      <pubDate>Mon, 16 Jun 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/2016/2014finding/</guid>
       <description></description>
     </item>
     

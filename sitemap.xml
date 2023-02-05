@@ -3,22 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/publication_types/1/</loc>
-    <lastmod>2022-05-01T00:00:03+00:00</lastmod>
+    <loc>/publication_types/2/</loc>
+    <lastmod>2023-02-01T00:00:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/featured/2023ccts/</loc>
+    <lastmod>2023-02-01T00:00:03+00:00</lastmod>
   </url>
   
   <url>
     <loc>/publication_types/</loc>
-    <lastmod>2022-05-01T00:00:03+00:00</lastmod>
+    <lastmod>2023-02-01T00:00:03+00:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/</loc>
-    <lastmod>2022-05-01T00:00:03+00:00</lastmod>
+    <lastmod>2023-02-01T00:00:03+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
+    <lastmod>2023-02-01T00:00:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/1/</loc>
     <lastmod>2022-05-01T00:00:03+00:00</lastmod>
   </url>
   
@@ -28,123 +38,13 @@
   </url>
   
   <url>
-    <loc>/publication_types/2/</loc>
-    <lastmod>2022-03-01T00:00:01+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2022/2022hits/</loc>
-    <lastmod>2022-03-01T00:00:01+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2022/2022ajh/</loc>
-    <lastmod>2022-01-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2022/2022fp/</loc>
-    <lastmod>2022-01-14T00:00:01+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2022/2022eeg_expertise/</loc>
-    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/featured/2022isl/</loc>
-    <lastmod>2022-01-01T00:00:03+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2022/2022federated/</loc>
-    <lastmod>2022-01-01T00:00:01+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/featured/2022hcl/</loc>
     <lastmod>2022-01-01T00:00:01+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2022/2022vague/</loc>
-    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2021/2021multiscale/</loc>
-    <lastmod>2021-10-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2021/2021meta/</loc>
-    <lastmod>2021-09-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2021/2021hrs/</loc>
-    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2021/2021pvsc/</loc>
-    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2021/2021esn/</loc>
-    <lastmod>2021-04-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2021/2021regenn/</loc>
-    <lastmod>2021-04-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2021/2021aid/</loc>
-    <lastmod>2021-04-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2021/2021active/</loc>
-    <lastmod>2021-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/featured/2021tegnet/</loc>
     <lastmod>2021-02-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2021/2021covid/</loc>
-    <lastmod>2021-02-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2021/2021pic/</loc>
-    <lastmod>2021-01-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2021/2021management/</loc>
-    <lastmod>2021-01-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2020/2020norwood/</loc>
-    <lastmod>2020-11-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2020/2020keen/</loc>
-    <lastmod>2020-11-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2020/2020viva/</loc>
-    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -158,28 +58,8 @@
   </url>
   
   <url>
-    <loc>/publication/2020/2020ksl/</loc>
-    <lastmod>2020-07-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2020/2020cardioid/</loc>
-    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2020/2020life/</loc>
-    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/featured/2020cardiolearn/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2020/2020cheer/</loc>
-    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -188,83 +68,13 @@
   </url>
   
   <url>
-    <loc>/publication/2019/2019rdpd/</loc>
-    <lastmod>2019-08-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2019/2019kmargin/</loc>
-    <lastmod>2019-08-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/featured/2019combining/</loc>
     <lastmod>2019-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2018/2018knowledge/</loc>
-    <lastmod>2018-11-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2017/2017finding/</loc>
-    <lastmod>2017-07-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2017/2017rebuild/</loc>
-    <lastmod>2017-07-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2017/2017event/</loc>
-    <lastmod>2017-07-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2017/2017assess/</loc>
-    <lastmod>2017-05-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/featured/2017encase/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2016/2016fvbm/</loc>
-    <lastmod>2016-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2016/2016real/</loc>
-    <lastmod>2016-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2016/2016novel/</loc>
-    <lastmod>2016-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2016/2016combining/</loc>
-    <lastmod>2016-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2016/2014segment/</loc>
-    <lastmod>2014-12-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2016/2014ndbc/</loc>
-    <lastmod>2014-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/2016/2014finding/</loc>
-    <lastmod>2014-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
