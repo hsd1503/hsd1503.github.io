@@ -39,33 +39,409 @@
       </script>
     <!-- please remove the code if using this template -->
 
+    <!-- 滚动动画脚本 -->
+    <script>
+      // 检测元素是否在视口中
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      // 处理滚动动画
+      function handleScrollAnimation() {
+        var elements = document.querySelectorAll('.content-section');
+        elements.forEach(function(element) {
+          if (isElementInViewport(element)) {
+            element.classList.add('visible');
+          }
+        });
+      }
+
+      // 初始化
+      window.addEventListener('DOMContentLoaded', function() {
+        // 为所有内容区域添加动画类
+        var contentSections = document.querySelectorAll('.content-section');
+        contentSections.forEach(function(section) {
+          section.classList.add('animate-on-scroll');
+        });
+
+        // 初始检查
+        handleScrollAnimation();
+
+        // 滚动时检查
+        window.addEventListener('scroll', handleScrollAnimation);
+      });
+    </script>
+
 </head>
 <body>
 
 <style>
+  /* 全局样式重置和基础设置 */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* 标题样式 */
   .heading {
     word-wrap: break-word;
     font-family: 'Oswald', sans-serif;
-    font-size: 32px;
+    font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+    color: #333;
   }
 
+  /* 信息文本样式 */
   .info-text {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
   }
 
+  /* 北京大学红色 */
   .university-color {
     color: #94070A;
   }
 
+  /* 链接列表样式 */
+  .link-list {
+    margin-top: 1.5rem;
+  }
+
   .link-list a {
-    margin-right: 5px;
+    margin-right: 0.75rem;
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .link-list a:hover {
+    color: #94070A;
+    text-decoration: underline;
+  }
+
+  /* 内容区域样式 */
+  .content-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .content-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* 导航栏样式 */
+  .navbar {
+    border-radius: 0;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    color: #333 !important;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .navbar-nav > li > a {
+    color: #555 !important;
+    font-weight: 500;
+    position: relative;
+    padding: 15px 18px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-nav > li > a:hover {
+    color: #4a89dc !important;
+    background-color: transparent !important;
+  }
+
+  .navbar-nav > li > a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #4a89dc;
+    transition: width 0.3s ease;
+  }
+
+  .navbar-nav > li > a:hover::after {
+    width: 100%;
+  }
+
+  .navbar-nav > li.active > a {
+    color: #4a89dc !important;
+    background-color: transparent !important;
+  }
+
+  .navbar-nav > li.active > a::after {
+    width: 100%;
+  }
+
+  .navbar-toggle {
+    border-color: #4a89dc !important;
+  }
+
+  .navbar-toggle .icon-bar {
+    background-color: #4a89dc !important;
+  }
+
+  /* 个人信息区域样式 */
+  .profile-section {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .profile-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* 头像样式 */
+  .profile-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .profile-img:hover {
+    transform: scale(1.05);
+  }
+
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 2rem;
+    }
+
+    .content-section {
+      padding: 1.5rem;
+    }
+
+    .profile-section {
+      padding: 1.5rem;
+    }
+
+    .link-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .link-list a {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .heading {
+      font-size: 1.8rem;
+    }
+
+    .content-section {
+      padding: 1rem;
+    }
+
+    .profile-section {
+      padding: 1rem;
+    }
+  }
+
+  /* 列表样式 */
+  ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* 链接样式 */
+  a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: #94070A;
+    text-decoration: underline;
+  }
+
+  /* 分隔线样式 */
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 2rem 0;
+  }
+
+  /* 标题样式 */
+  h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #4a89dc;
+  }
+
+  h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+
+  /* 强调文本样式 */
+  strong {
+    font-weight: 600;
+  }
+
+  /* 新闻和出版物样式 */
+  .publication-item {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid #e0e0e0;
+    transition: all 0.3s ease;
+  }
+
+  .publication-item:hover {
+    border-left-color: #94070A;
+    padding-left: 1.5rem;
+  }
+
+  .news-item {
+    margin-bottom: 0.75rem;
+    transition: all 0.3s ease;
+  }
+
+  .news-item:hover {
+    color: #94070A;
+  }
+
+  /* 页面加载和滚动效果 */
+  body {
+    opacity: 1;
+  }
+
+  /* 社交链接样式 */
+  .social-link {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    background-color: #f8f9fa;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+  }
+
+  .social-link:hover {
+    background-color: #e9ecef;
+    color: #94070A;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .social-link i {
+    margin-right: 0.3rem;
+  }
+
+  /* 平滑滚动 */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* 滚动时的元素动画 */
+  .animate-on-scroll {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease-out;
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* 按钮和链接的交互效果 */
+  a {
+    position: relative;
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #94070A;
+    transition: width 0.3s ease;
+  }
+
+  a:hover::after {
+    width: 100%;
   }
 </style>
 
 <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -84,6 +460,7 @@
         <li><a href="#publications">Publications</a></li>
         <li><a href="#teaching">Teaching</a></li>
         <li><a href="#awards">Awards</a></li>
+        <li><a href="#grants">Grants</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#team">Team</a></li>
         <!-- <li><a href="files/shendahong_CV.pdf">CV</a></li> -->
@@ -98,50 +475,61 @@
         <div class="row">
             <!-- Contact Info on the Sidebar -->
             <div class="col-md-3 col-xs-12">
-              <div class="heading">Shenda Hong (洪申达)</div>
-              <div class="row">
-                <div class="col-md-10 col-xs-4">
-                  <img class="img-responsive" src="img/shenda.jpg" alt="Avatar of Shenda Hong">
+              <div class="profile-section">
+                <div class="heading">Shenda Hong</div>
+                <div class="heading">洪申达</div>
+                <div class="row">
+                  <div class="col-md-10 col-xs-4">
+                    <img class="img-responsive profile-img" src="img/shenda.jpg" alt="Avatar of Shenda Hong">
+                  </div>
                 </div>
-              </div>
-              <div class="info-text">
-                <i>Assistant Professor</i><br>
-                <a href="http://dshm.bjmu.edu.cn/info/1251/1863.htm"> National Institute of Health Data Science</a><br>
-                <a href="https://www.ai.pku.edu.cn/info/1140/2876.htm"> Institute for Artificial Intelligence</a><br>
-                <a href="https://english.pku.edu.cn/"> Peking University</a><br>
-                <b>Email</b>: hongshenda@pku.edu.cn<br>
-                <b>Address</b>: 38 Xueyuan Rd, Haidian District, Beijing, 100191, China
-                <br>
-              </div>
-              <div class="link-list">
-                <a href="https://scholar.google.com/citations?user=K95az5UAAAAJ">Google Scholar</a>|
-                <a href="https://github.com/hsd1503">GitHub</a>|
-                <a href="https://github.com/PKUDigitalHealth">Lab GitHub</a>|
-                <a href="https://huggingface.co/PKUDigitalHealth">Lab HuggingFace</a>|
-                <a href="https://www.zhihu.com/people/Hawaive/">知乎</a>|
-                <a href="https://space.bilibili.com/3546581548665366">B站</a>
+                <div class="info-text">
+                  <i>Assistant Professor</i><br>
+                  <a href="http://dshm.bjmu.edu.cn/info/1251/1863.htm"> National Institute of Health Data Science</a><br>
+                  <a href="https://www.ai.pku.edu.cn/info/1140/2876.htm"> Institute for Artificial Intelligence</a><br>
+                  <a href="https://english.pku.edu.cn/"> Peking University</a><br>
+                  <b>Email</b>: hongshenda@pku.edu.cn<br>
+                  <b>Address</b>: 38 Xueyuan Rd, Haidian District, Beijing, 100191, China
+                  <br>
+                </div>
+                <div class="link-list">
+                  <a href="https://scholar.google.com/citations?user=K95az5UAAAAJ" class="social-link"><i class="fa fa-google" aria-hidden="true"></i> Google Scholar</a>
+                  <a href="https://mp.weixin.qq.com/s/otSzn96jAfNW5cvXV5ib9A" class="social-link"><i class="fa fa-weixin" aria-hidden="true"></i> WeChat</a>
+                  <a href="https://github.com/PKUDigitalHealth" class="social-link"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                  <a href="https://huggingface.co/PKUDigitalHealth" class="social-link"><i class="fa fa-robot" aria-hidden="true"></i> HuggingFace</a>
+                  <a href="https://space.bilibili.com/3546581548665366" class="social-link"><i class="fa fa-play-circle" aria-hidden="true"></i> BiliBili</a>
+                  <a href="https://www.zhihu.com/people/Hawaive/" class="social-link"><i class="fa fa-question-circle" aria-hidden="true"></i> Zhihu</a>
+                </div>
               </div>
             </div>
             <!-- Entries Column -->
             <div class="col-md-8 col-xs-12">
-                <div class="col" style="margin-top:3%; text-align:left;">
-
-                  <p><strong style="color:#94070A">[Updated at 2025/11] We are recruiting team members who have a strong passion of AI for digital health: 1) <a href="https://mp.weixin.qq.com/s/57BChLKnfW1agxKKfi0Fvg">PostDoc (Opening) </a> with clinical research methodology and writing skills, coding skills not required; 2) <a href="https://sai.pku.edu.cn/info/1034/3108.htm">Ph.D. (Positions available for 2027 at School of Intelligence Science Technology (SIST, 智能学院))</a>; 3) Research Assistant with proficient coding skills. If you are interested, please send an email with your CV attached. </strong> </p>
-
-                  <!-- <p><strong style="color:#94070A">[Updated at 2025/06] We are recruiting Research Assistant who have a strong passion of AI for digital health with proficiency coding skills. If you are interested, please fill out the form. </strong> </p> -->
+                <div class="content-section">
+                  <div style="background-color: #f0f4f8; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; border-left: 4px solid #94070A; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <h3 style="margin-top: 0; margin-bottom: 0.5rem; font-family: 'Oswald', sans-serif; color: #333;"><i class="fa fa-bullhorn" aria-hidden="true"></i> Recruitment Announcement [2026/02]</h3>
+                    <p style="margin-bottom: 0.5rem;">We are recruiting team members who have a strong passion of AI for digital health. If you are interested, please send an email with your CV attached:</p>
+                    <ul style="margin-top: 0.5rem; margin-bottom: 0; padding-left: 1.5rem;">
+                      <li><a href="https://postdocs.bjmu.edu.cn/zpxx/9d95d2b91d75460896fa91eb3cd0c682.htm">PostDoc</a> with clinical research methodology and writing skills, coding skills not required</li>
+                      <li><a href="https://sai.pku.edu.cn/info/1034/3108.htm">Ph.D.</a> One position available at School of Intelligence Science Technology (2027 Fall), one position available at National Institute of Health Data Science (2027 Fall)</li>
+                      <li>Research Assistant with proficient coding skills</li>
+                    </ul>
+                  </div>
 
                     <p>
                         Shenda Hong is an Assistant Professor (tenure-track) at National Institute of Health Data Science, and Institute for Artificial Intelligence, Peking University. His research interests focus on deep learning for temporal medical data, including electronic health records and biosignals (e.g., ECG, PPG, EEG, PSG, PCG, FHR, Spirogram). He is also dedicated to AI for digital health, enhancing smart devices with AI, and developing applications for clinical practice. Additionally, he serves as an associate editor of npj Digital Medicine, SPJ Health Data Science, and as a reviewer for top-tier AI conferences, including ICLR, NeurIPS, ICML, KDD, AAAI, and IJCAI.
                     </p>
 
-                    <p><strong style="color:#94070A";>Research Interests</strong>
+                    <h3>Current Research Interests</h3>
                     <ul>
-                        <li> Deep learning for <a href="https://www.bilibili.com/video/BV1uY4y1E7vF">temporal medical data</a>: temporal events, time series (e.g. longitudinal data, cohort, electronic health records), and physiological signals (e.g. ECG, PPG, EEG, PSG, PCG, FHR, Spirogram). We won the first place of the <a href="https://physionet.org/content/challenge-2017/1.0.0">18th PhysioNet/Computing in Cardiology Challenge</a>, and released a DNN backbone <a href="https://github.com/hsd1503/resnet1d">Net1D</a>. Currently working on learning in label scarce environment, generative methods, integrating with medical knowledge and other modality data (e.g. texts). 
-                        <li> AI for digital health: enhancing smart devices with AI and applications in healthcare, <a href="https://item.jd.com/10034002814064.html">portable ECG device</a>, <a href="https://item.jd.com/100075297613.html">flexible ECG patch</a>, <a href="https://m.peopledailyhealth.com/articleDetailShare?articleId=d82aa59146874d03bf9278852dcea240&_t=1736855177391">ECG pad</a>, smart watch (with PPG/ECG sensor), smart ring (with PPG sensor), smart stethoscope (with PCG sensor), smart eyemask (with EEG sensor). Currently collaborating closely with affiliated hospitals of Peking University, working on smart devices for sleep disorders, cardiovascular disease, and fetal monitoring. 
+                        <li> Biosignal Specialized MLLMs: Constructing domain-specific multimodal large language models, such as <a href="https://www.arxiv.org/abs/2602.04279">ECG-R1</a>, <a href="https://openreview.net/forum?id=idtZwmjakN">GEM</a>, and <a href="https://arxiv.org/abs/2507.16145">SpiroLLM</a>, to bridge the semantic gap between time-series biosignals and clinical language.
+                        <li> Foundation Models of Biosignals: Developing generalist foundation models, such as <a href="https://ai.nejm.org/stoken/default+domain/BFNQQWBEQRXK464GCEPW/full?redirectUri=doi/full/10.1056/AIoa2401033">ECGFounder</a>, <a href="https://www.medrxiv.org/content/10.1101/2025.09.06.25335216v1">SleepFounder</a>, <a href="https://arxiv.org/abs/2601.10748">AnyECG</a>, <a href="https://arxiv.org/abs/2511.01747">AnyPPG</a>, by leveraging large-scale, multi-modality databases to enable robust representation learning and zero-shot generalization across diverse clinical tasks.
+                        <li> Digital Biomarker Discovery: Establishing a systematic paradigm, such as <a href="https://www.nature.com/articles/s43856-025-01188-9">PPGage</a>, <a href="https://arxiv.org/abs/2601.15326">ECGomics</a>, to transform high-dimensional biosignals into structured, quantifiable metrics.
+                        <li> AI for Digital Health: Enhancing smart devices with AI, including <a href="https://item.jd.com/10034002814064.html">Portable ECG Device</a>, <a href="https://item.jd.com/100075297613.html">Flexible ECG Patch</a>, <a href="https://m.peopledailyhealth.com/articleDetailShare?articleId=d82aa59146874d03bf9278852dcea240&_t=1736855177391">ECG Pad</a>, smart ring (with PPG sensor), smart stethoscope (with PCG sensor). 
+                        <li> Real-World Clinical Validation: Conducting rigorous real-world studies, including opportunistic screening systems for <a href="https://arxiv.org/abs/2502.17499">AVBI/LQTS</a>, <a href="https://arxiv.org/abs/2510.24750v2">WPW</a>, <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5775869">SVT</a>, AF, and randomized controlled trials (RCTs), to evaluate the clinical efficacy and implementation pathways of AI-ECG interventions.
                     </ul>
                     </p>
 
-                    <p><strong style="color:#94070A";>Working Experience</strong>
+                    <h3>Working Experience</h3>
                       <ul>
                         <!-- <li> 2025/01 - now, Assistant Professor, Department of Emergency Medicine (Joint Appointment), Peking University First Hospital, Beijing, China -->
                         <li> 2024/09 - now, Assistant Professor, Institute for Artificial Intelligence, Peking University, Beijing, China
@@ -155,46 +543,29 @@
                       </ul>
                     </p>
 
-                    <p><strong style="color:#94070A";>Education</strong>
+                    <h3>Education</h3>
                       <ul>
                         <li> 2014/09 - 2019/07, Ph.D., Computer Sciences, Peking University, Beijing, China, advisor Prof. <a href="http://www.ist.pku.edu.cn/info/1084/1250.htm">Hongyan Li</a>
                         <li> 2010/09 - 2014/07, B.S., Mathematics, Beijing University of Posts and Telecommunications, Beijing, China
                         <li> 2007/09 - 2010/06, Science Honor Class, Hefei No.1 High School, Hefei, Anhui
                       </ul>
                     </p>
-                    <hr>
-
                 </div>
 
-                <div class="col">
+                <div class="content-section">
                     <h2 id="news">News</h2>
+                      <ul>
+                        <li> Follow our latest activities on WeChat Official Account: <a href="https://mp.weixin.qq.com/s/otSzn96jAfNW5cvXV5ib9A">PKUDigitalHealth</a>
+                        <li> Follow our latest publications on <a href="https://scholar.google.com/citations?hl=en&user=K95az5UAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>
+                        <li> Follow our latest codes on <a href="https://github.com/PKUDigitalHealth">GitHub</a>
+                        <li> Follow our latest models on <a href="https://huggingface.co/PKUDigitalHealth">HuggingFace</a>
+                        <li> Follow our latest webinar on <a href="https://space.bilibili.com/3546581548665366">BiliBili</a>
+                      </ul>
+                    
+                </div>
 
-                    <p><strong>[2025/06]</strong> We will host the <a href="https://www.aimel.ai/bibm2025workshop/">BIBM Workshop</a> (LLM in Healthcare) in Wuhan, China </p>
-                    <p><strong>[2025/06]</strong> Two papers about ECG foundation model and EEG spike detection accepted to NEJM AI </p>
-                    <p><strong>[2025/06]</strong> One paper about text to ECG generation accepted to Cell Patterns </p>
-                    <p><strong>[2025/04]</strong> Invited to serve as an associate editor for npj Digital Medicine </p>
-                    <p><strong>[2025/04]</strong> One paper about PSG sleep depth index published in npj Digital Medicine </p>
-                    <p><strong>[2025/01]</strong> One paper about AI-ECG published in European Heart Journal - Digital Health </p>
-                    <p><strong>[2025/01]</strong> Two papers about ECG-LLM and imbalance regression accepted to ICLR 2025 </p>
-                    <!-- <p><strong>[2024/12]</strong> One paper published in npj Cardiovascular Health </p> -->
-                    <!-- <p><strong>[2024/09]</strong> One paper accepted to NeurIPS 2024 </p> -->
-                    <!-- <p><strong>[2024/09]</strong> Two papers published in npj Women's Health </p> -->
-                    <p><strong>[2024/08]</strong> We successfully organized the <a href="https://www.aimel.ai/kdd2024aidsh">KDD-AIDSH Workshop</a> (AI and Data Science for Healthcare) in Barcelona </p>
-                    <p><strong>[2024/07]</strong> One paper about AI for sensor design published in PNAS </p>
-                    <p><strong>[2024/01]</strong> Three papers accepted to ICLR 2024 </p>
-                    <p><strong>[2024/01]</strong> AIMEL (AI in Medcine League) organized its <a href="https://mp.weixin.qq.com/s/J3hNt5q0MGfiFDnfGpVmew">first seminar</a> at Peking University Health Science Center </p>
-                    <p><strong>[2023/12]</strong> An invited <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00230-3/fulltext">comment</a> published in The Lancet Digital Health </p>
-                    <p><strong>[2023/11]</strong> Lab member Guangkun Nie is <a href="https://dshm.bjmu.edu.cn/info/1039/2010.htm">funded</a> by the Natural Science Foundation of Beijing (2023年度北京市自然科学基金本科生“启研”计划项目). Congrats! </p>
-                    <!-- <p><strong>[2023/10]</strong> Our solution <a href="https://cinc.org/2023/Program/accepted/183_CinCFinalPDF.pdf">paper</a> (ranked 5/36) of George B. Moody PhysioNet Challenge 2023 is published. </p> -->
-                    <!-- <p><strong>[2023/10]</strong> The world's largest ECG database, <a href="https://bdsp.io/content/heedb/1.0/">Harvard-Emory ECG Database</a>, is released! </p> -->
-                    <!-- <p><strong>[2023/09]</strong> Our <a href="https://dl.acm.org/doi/abs/10.1145/3626235">diffusion survey paper</a> is published in ACM Computing Surveys.</p> -->
-                    <!-- <p><strong>[2023/09]</strong> Our <a href="https://www.the-innovation.org/article/doi/10.59717/j.xinn-med.2023.100030">AI for medicine review paper</a> is published in The Innovation Medicine.</p> -->
-                    <!-- <p><strong>[2023/09]</strong> One paper accepted to NeurIPS 2023.</p> -->
-                    <!-- <p><strong>[2023/08]</strong> Our <a href="https://rs.yiigle.com/cmaid/1471928">heart age estimation with single-lead ECG research (in Chinese)</a> is published in Chinese Journal of Cardiac Arrhythmias (中华心律失常学杂志). You can try it using our  <a href="https://item.jd.com/10034002814064.html">portable ECG device</a>. </p> -->
-                <hr>
-
-                <div class="col">
-                    <h2 id="publications">Selected Work</h2>
+                <div class="content-section">
+                    <h2 id="publications">Selected Publications</h2>
                     <p>See full publications at 
                         <a href="https://scholar.google.com/citations?user=K95az5UAAAAJ">Google Scholar</a>, 
                         <a href="https://dblp.org/pid/146/8262.html">DBLP</a>, and 
@@ -202,132 +573,132 @@
                     </p>
                     <p>(<strong><sup>*</sup></strong>Corresponding author)</p>
 
-                    <!-- <p> Sumei Fan, Deyun Zhang, Yue Wang, Shijia Geng, Kun Lu, Meng Sang, Weilun Xu, Haixue Wang, Qinghao Zhao, Chuandong Cheng, Peng Wang, Shenda Hong. <a href="https://arxiv.org/abs/2502.17499"> Detecting Long QT Syndrome and First-Degree Atrioventricular Block using Single-Lead AI-ECG: A Multi-Center Real-World Study</a>. arXiv preprint arXiv:2502.17499 (2025) </p> -->
-
-                    <p> <strong>[NEJM AI 2025]</strong> Jun Li, Aaron D. Aguirre, Valdery Moura Junior, Jiarui Jin, Che Liu, Lanhai Zhong, Chenxi Sun, Gari Clifford, M. Brandon Westover, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://ai.nejm.org/doi/full/10.1056/AIoa2401033"> An Electrocardiogram Foundation Model Built on over 10 Million Recordings</a>. NEJM AI, 2, 7, (2025) </p>
-
-                    <p> <strong>[NEJM AI 2025]</strong> Jun Li, Daniel M. Goldenholz, Moritz Alkofer, Chenxi Sun, Fabio A. Nascimento, Jonathan J. Halford, Brian C. Dean, Mattia Galanti, Aaron F. Struck, Adam S. Greenblatt, Alice D. Lam, Aline Herlopian, Chinasa Nwankwo, Dan Weber, Douglas Maus, Hiba A. Haider, Ioannis Karakis, Ji Yeoun Yoo, Marcus C. Ng, Olga Selioutski, Olga Taraschenko, Gamaleldin Osman, Roohi Katyal, Sarah E. Schmitt, Selim Benbadis, Sydney S. Cash, William O. Tatum, Zubeda Sheikh, Wan Yee Kong, Grace Bayas, Niels Turley, <strong>Shenda Hong<sup>*</sup></strong>, M. Brandon Westover*, Jin Jing*. <a href="https://ai.nejm.org/doi/full/10.1056/AIoa2401221"> Expert-Level Detection of Epilepsy Markers in EEG on Short and Long Timescales</a>. NEJM AI, 2, 7, (2025) </p>
-
-                    <!-- <p> <strong>[Communications Medicine 2025]</strong> Guangkun Nie, Qinghao Zhao, Gongzheng Tang, Yaxin Li, Shenda Hong. <a href="https://arxiv.org/abs/2502.12990"> Artificial Intelligence-derived Vascular Age from Photoplethysmography: A Novel Digital Biomarker for Cardiovascular Health</a>. arXiv preprint arXiv:2502.12990 (2025) </p> -->
+                    <h3>Top AI Medical Journal</h3>
                     
-                    <p> <strong>[npj Digital Medicine 2025]</strong> Songchi Zhou, Ge Song, Haoqi Sun, Yue Leng, M. Brandon Westover, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://doi.org/10.1038/s41746-025-01607-0"> Continuous Sleep Depth Index Annotation with Deep Learning Yields Novel Digital Biomarkers for Sleep Health</a>. npj Digital Medicine 8, 203 (2025) </p>
+                    <div class="publication-item"> <strong>[NEJM AI 2025]</strong> Jun Li, Aaron D. Aguirre, Valdery Moura Junior, Jiarui Jin, Che Liu, Lanhai Zhong, Chenxi Sun, Gari Clifford, M. Brandon Westover, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://ai.nejm.org/stoken/default+domain/BFNQQWBEQRXK464GCEPW/full?redirectUri=doi/full/10.1056/AIoa2401033"> An Electrocardiogram Foundation Model Built on over 10 Million Recordings</a>. NEJM AI, 2, 7, (2025) </div>
 
-                    <p> <strong>[Cell Patterns 2025]</strong> Yongfan Lai, Jiabo Chen, Deyun Zhang, Yue Wang, Shijia Geng, Hongyan Li, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://www.cell.com/patterns/fulltext/S2666-3899(25)00139-4"> DiffuSETS: 12-lead ECG Generation Conditioned on Clinical Text Reports and Patient-Specific Information</a>. Patterns 6, 101291 (2025) </p>
-
-                    <p> <strong>[ICLR 2025]</strong> Jiarui Jin, Haoyu Wang, Hongyan Li*, Jun Li, Jiahui Pan*, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://openreview.net/forum?id=6Hz1Ko087B"> Reading Your Heart: Learning ECG Words and Sentences via Pre-training ECG Language Model</a>. International Conference on Learning Representations (ICLR) 2025 </p>
-
-                    <p> <strong>[ICLR 2025]</strong> Guangkun Nie, Gongzheng Tang, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://openreview.net/forum?id=YeSxbRrDRl"> Dist Loss: Enhancing Regression in Few-Shot Region through Distribution Distance Constraint</a>. International Conference on Learning Representations (ICLR) 2025 </p>
-
-                    <!-- <p> <strong>[npj Systems Biology and Applications 2025]</strong> Shuhao Mei, Xin Li, Yuxi Zhou*, Jiahao Xu, Yong Zhang*, Yuxuan Wan, Shan Cao, Qinghao Zhao, Shijia Geng, Junqing Xie, Shengyong Chen*, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://www.nature.com/articles/s41540-025-00489-y"> Deep Learning for Detecting and Early Predicting Chronic Obstructive Pulmonary Disease from Spirogram Time Series </a>. npj Syst Biol Appl 11, 18 (2025) </p> -->
+                    <div class="publication-item"> <strong>[NEJM AI 2025]</strong> Jun Li, Daniel M. Goldenholz, Moritz Alkofer, Chenxi Sun, Fabio A. Nascimento, Jonathan J. Halford, Brian C. Dean, Mattia Galanti, Aaron F. Struck, Adam S. Greenblatt, Alice D. Lam, Aline Herlopian, Chinasa Nwankwo, Dan Weber, Douglas Maus, Hiba A. Haider, Ioannis Karakis, Ji Yeoun Yoo, Marcus C. Ng, Olga Selioutski, Olga Taraschenko, Gamaleldin Osman, Roohi Katyal, Sarah E. Schmitt, Selim Benbadis, Sydney S. Cash, William O. Tatum, Zubeda Sheikh, Wan Yee Kong, Grace Bayas, Niels Turley, <strong>Shenda Hong<sup>*</sup></strong>, M. Brandon Westover*, Jin Jing*. <a href="https://ai.nejm.org/stoken/default+domain/F8GCKVTKBECHKRHVCGTT/full?redirectUri=doi/full/10.1056/AIoa2401221"> Expert-Level Detection of Epilepsy Markers in EEG on Short and Long Timescales</a>. NEJM AI, 2, 7, (2025) </div>
                     
-                    <p> <strong>[ICLR 2024]</strong> Chenxi Sun, Yaliang Li, Hongyan Li*, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://openreview.net/forum?id=Tuh4nZVb0g"> TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series</a>. International Conference on Learning Representations (ICLR) 2024 </p>
+                    <div class="publication-item"> <strong>[npj Digital Medicine 2025]</strong> Songchi Zhou, Ge Song, Haoqi Sun, Yue Leng, M. Brandon Westover, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://doi.org/10.1038/s41746-025-01607-0"> Continuous Sleep Depth Index Annotation with Deep Learning Yields Novel Digital Biomarkers for Sleep Health</a>. npj Digital Medicine 8, 203 (2025) </div>
 
-                    <p> <strong>[Lancet Digital Health 2024]</strong> <strong>Shenda Hong<sup>*</sup></strong>, Qinghao Zhao. <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00230-3/fulltext"> Expanding Electrocardiogram Abilities for Postoperative Mortality Prediction with Deep Learning</a>. The Lancet Digital Health 6, no. 1 (2024): e4-e5 </p>
+                    <div class="publication-item"> <strong>[Cell Patterns 2025]</strong> Yongfan Lai, Jiabo Chen, Deyun Zhang, Yue Wang, Shijia Geng, Hongyan Li, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://www.cell.com/patterns/fulltext/S2666-3899(25)00139-4"> DiffuSETS: 12-lead ECG Generation Conditioned on Clinical Text Reports and Patient-Specific Information</a>. Patterns 6, 101291 (2025) </div>
 
-                    <p> <strong>[npj Cardiovascular Health 2024]</strong> Jiarong Chen, Wanqing Wu, Tong Liu, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://www.nature.com/articles/s44325-024-00036-4">Multi-Channel Masked Autoencoder and Comprehensive Evaluations for Reconstructing 12-Lead ECG from Arbitrary Single-Lead ECG</a>. npj Cardiovasc Health 1, 34 (2024) </p>
+                    <div class="publication-item"> <strong>[Cell Patterns 2023]</strong> Chenxi Sun, Hongyan Li*, Moxian Song, Derun Cai, Baofeng Zhang, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://www.cell.com/patterns/fulltext/S2666-3899(23)00018-1">Continuous Diagnosis and Prognosis by Controlling the Update Process of Deep Neural Networks</a>. Patterns 4(2), 100687 </div>
 
-                    <!-- <p> <strong>[npj Women's Health 2024]</strong> Zenghui Lin, Xintong Liu, Nan Wang, Ruichen Li, Qingao Liu, Jingying Ma, Liwei Wang*, Yan Wang*, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://www.nature.com/articles/s44294-024-00033-z">Deep Learning with Information Fusion and Model Interpretation for Long-term Prenatal Fetal Heart Rate Data</a>. npj Womens Health 2, 31 (2024) </p> -->
+                    <h3>Top AI Conference</h3>
+                    
+                    <div class="publication-item"> <strong>[ICLR 2026]</strong> Yongchao Long, Yingying Zhang, Xianbin Wen, Xian Wu*, Yuxi Zhou*, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://openreview.net/forum?id=crKJJ4Ej60">Copy-Paste to Mitigate Large Language Model Hallucinations</a>. ICLR 2026 </div>
 
-                    <p> <strong>[Cell Patterns 2023]</strong> Chenxi Sun, Hongyan Li*, Moxian Song, Derun Cai, Baofeng Zhang, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://www.cell.com/patterns/fulltext/S2666-3899(23)00018-1">Continuous Diagnosis and Prognosis by Controlling the Update Process of Deep Neural Networks</a>. Patterns 4(2), 100687 </p>
+                    <div class="publication-item"> <strong>[NeurIPS 2025]</strong> Xiang Lan, Feng Wu, Kai He, Qinghao Zhao, <strong>Shenda Hong<sup>*</sup></strong>, Mengling Feng*. <a href="https://openreview.net/forum?id=idtZwmjakN">GEM: Empowering MLLM for Grounded ECG Understanding with Time Series and Images</a>. NeurIPS 2025 </div>
 
-                    <!-- <p> <strong>[KDD 2020]</strong> <strong>Shenda Hong<sup>#</sup></strong>, Yanbo Xu<sup>#</sup>, Alind Khare<sup>#</sup>, Satria Priambada<sup>#</sup>, Kevin Maher, Alaa Aljiffry, Jimeng Sun, Alexey Tumanov. <a href="https://dl.acm.org/doi/abs/10.1145/3394486.3403212">HOLMES: Health OnLine Model Ensemble Serving for Deep Learning Models in Intensive Care Units</a>. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, 1614-1624 </p> -->
+                    <div class="publication-item"> <strong>[ICLR 2025]</strong> Jiarui Jin, Haoyu Wang, Hongyan Li*, Jun Li, Jiahui Pan*, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://openreview.net/forum?id=6Hz1Ko087B"> Reading Your Heart: Learning ECG Words and Sentences via Pre-training ECG Language Model</a>. ICLR 2025 </div>
 
-                    <!-- <p> <strong>[WWW 2020]</strong> <strong>Shenda Hong</strong>, Zhaoji Fu, Rongbo Zhou, Jie Yu, Yongkui Li, Kai Wang, Guanlin Cheng. <a href="https://dl.acm.org/doi/abs/10.1145/3366424.3383529">CardioLearn: A Cloud Deep Learning Service for Cardiac Disease Detection from Electrocardiogram</a>. In Companion Proceedings of the Web Conference 2020, Demo Track, 148-152 </p> -->
+                    <div class="publication-item"> <strong>[ICLR 2025]</strong> Guangkun Nie, Gongzheng Tang, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://openreview.net/forum?id=YeSxbRrDRl"> Dist Loss: Enhancing Regression in Few-Shot Region through Distribution Distance Constraint</a>. ICLR 2025 </div>
+                    
+                    <div class="publication-item"> <strong>[ICLR 2024]</strong> Chenxi Sun, Yaliang Li, Hongyan Li*, <strong>Shenda Hong<sup>*</sup></strong>. <a href="https://openreview.net/forum?id=Tuh4nZVb0g"> TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series</a>. ICLR 2024 </div>
+                </div>
 
+                <div class="content-section">
+                    <h2 id="teaching">Teaching</h2>
+                    <ul>
+                        <li>Basis of Python Programming in Health Data Science (for undergraduate students, graduate students and Continuing Education in Medicine)</li>
+                    </ul>
+                    <ul>
+                      <li><a href="https://mp.weixin.qq.com/s/cBfPVD04ryNClw6Cc76o7w">Introduction to Artificial Intelligence in Medicine (医学人工智能通识)</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="content-section">
+                    <h2 id="awards">Awards</h2>
+                    <ul>
+                        <li>2025/07, Teaching Excellence Award, Peking University Health Science Center</li>
+                        <li>2021/09, Top-Cited Paper Awards (Top 1%), IOP Publishing</li>
+                        <li>2020/12, Boya Postdoctoral Fellowship, Peking University</li>
+                        <li>2019/10, Golden Award, <a href="https://cy.ncss.cn/">China “Internet+” Innovation and Entrepreneurship Competition</a>
+                        <li>2017/09, First Place in the <a href="https://physionet.org/content/challenge-2017/1.0.0/">18th PhysioNet/Computing in Cardiology Challenge</a> </li>
+                    </ul>
+
+                </div>
+
+                <div class="content-section">
+                    <h2 id="grants">Grants</h2>
+                    <ul>
+                      <li>CCF-Tencent Rhino-Bird Open Research Fund, 2025</li>
+                      <li>CCF-Zhipu Large Model Innovation Fund, 2024</li>
+                      <li>PKU-OPPO Fund, 2023/2025</li>
+                      <li>National Natural Science Foundation of China, 2022</li>
+                    </ul>
+
+                </div>
+
+                <div class="content-section">
+                    <h2 id="services">Services</h2>
+                    <ul>
+                      <li>Associate Editor of <a href="https://www.nature.com/npjdigitalmed/">npj Digital Medicine</a>, <a href="https://spj.science.org/journal/hds">SPJ Health Data Science</a></li>
+                      <li>Journal Reviewer of NEJM AI, Lancet Digital Health, EHJ Digital Health, and many others</li>
+                      <li>Conference Reviewer of ICLR, ICML, NeurIPS, KDD, AAAI, IJCAI</li>
+                      <li>External Reviewer of Center for Medical Device Evaluation (National Medical Products Administration, NMPA) of China</li>
+                    </ul>
+
+                </div>
+
+                <div class="content-section">
+                    <h2 id="team">Team</h2>
+                    <h4>Research Staff</h4>
+                    <ul>
+                      <li><a href="https://scholar.google.com/citations?user=Q0L04uYAAAAJ&hl=en">Deyun Zhang</a> (2021-)</li>
+                      <li>Shijie Chen</a> (2025-)</li>
+                    </ul>
+                    <h4>PostDoc</h4>
+                    <ul>
+                        <li>Cheng Zhang (2026-)</li>
+                    </ul>
+                    <h4>Ph.D. Students</h4>
+                    <ul>
+                      <li><a href="https://scholar.google.com/citations?user=dfpJWQYAAAAJ&hl=en">Jun Li</a> (2026-, RA since 2022)</li>
+                      <li><a href="https://scholar.google.com/citations?user=PD1MN7oAAAAJ&hl=en">Xiaocheng Fang</a> (2026-, co-supervise with Prof. Hongyan Li, RA since 2025)</li>
+                      <li><a href="https://scholar.google.com/citations?user=q1IOLcUAAAAJ&hl=en">Mingke Yan</a> (2025-)</li>
+                      <li><a href="https://scholar.google.com/citations?user=qm-xdSEAAAAJ&hl=en">Jiarui Jin</a> (2025-, co-supervise with Prof. Hongyan Li, RA since 2024)</li>
+                      <li><a href="https://scholar.google.com/citations?user=TXInf0EAAAAJ&hl=en">Guangkun Nie</a> (2025-, co-supervise with Prof. Hongyan Li, RA since 2022)</li>
+                      <li><a href="https://scholar.google.com/citations?user=1WKUrC0AAAAJ&hl=en">Donglin Xie</a>  (2024-)</li>
+                      <li><a href="https://scholar.google.com/citations?user=djT7V_wAAAAJ&hl=en">Gongzheng Tang</a> (2023-)</li>
+                    </ul>
+                    <!-- <h4>Undergraduate Students</h4>
+                    <ul>
+                        <li>Chen Xu (2024-, Clinical Medicine, Peking University)</li>
+                        <li>Zifeng Qiu (2024-, Clinical Medicine, Peking University)</li>
+                        <li>Yuechao Zhao (2024-, School of Health Humanities, Peking University)</li>
+                        <li>Zhuoran Kan (2024-, Institute of Medical Technology, Peking University)</li>
+                        <li>Yujie Xiao (2024-, Institute of Medical Technology, Peking University)</li>
+                        <li>Yuxuan Guo (2023-, Institute of Medical Technology, Peking University)</li>
+                        <li>Aiminuer Aizezi (2023-, School of Public Health, Peking University)</li>
+                        <li>Zenghui Lin (2023-, School of Public Health, Peking University)</li>
+                        <li>Xintong Liu (2022-, Clinical Medicine, Peking University)</li>
+                        <li>Yifan Xiao (2022-, Institute of Medical Technology, Peking University)</li>
+                        <li>Jiabao Zhu (2022-, Institute of Medical Technology, Peking University)</li>
+                    </ul> -->
+                    <!-- <h4>Research Assistant</h4>
+                    <ul>
+                      <li>Jun Li (2022-)</li>
+                    </ul> -->
+                    <!-- <h4>Visiting Students</h4>
+                    <ul>
+                        <li>Jiarong Chen (2023-2024, master student at Sun Yat-sen University, now Ph.D. student at Shanghai Jiao Tong University)</li>
+                        <li>Jiabo Chen (2023-2024, undergraduate student at Tianjin University of Technology, now master student at Nankai University)</li>
+                        <li>Songchi Zhou (2022-2024, undergraduate student at Shanghai Jiao Tong University, now Ph.D. student at Tsinghua University)</li>
+                        <li>Ji Deng (2022-2023, undergraduate student at Beijing University of Posts and Telecommunications, now Ph.D. student at Peking University)</li>
+                        <li>Haoyang Hong (2022-2023, undergraduate student at Chinese University of Hong Kong (Shenzhen), now Ph.D. student at Imperial College London)</li>
+                        <li>Jingying Ma (2021-2023, undergraduate student at Beihang University, now Ph.D. student at National University Singapore)</li>
+                        <li>Wenrui Zhang (2021-2022, master student at National University Singapore, now working at Huawei)</li>
+                    </ul> -->
+
+                </div>
+
+                <div class="content-section">
+                    <p>Last update: 2026/02</p>
+                </div>
             </div>
-        <hr>
-        <div class="col">
-            <h2 id="teaching">Teaching</h2>
-            <ul>
-                <li>Basis of Python Programming in Health Data Science (for undergraduate students, graduate students and Continuing Education in Medicine)</li>
-            </ul>
-            <ul>
-              <li><a href="https://mp.weixin.qq.com/s/cBfPVD04ryNClw6Cc76o7w">Introduction to Artificial Intelligence in Medicine (医学人工智能通识)</a></li>
-            </ul>
-
-        </div>
-
-        <hr>
-
-        <div class="col">
-            <h2 id="awards">Awards</h2>
-            <ul>
-                <li>2021/09, Top-Cited Paper Awards (Top 1%), IOP Publishing</li>
-                <li>2020/12, Boya Postdoctoral Fellowship (Peking University)</li>
-                <li>2019/10, Golden Award, <a href="https://cy.ncss.cn/">China “Internet+” Innovation and Entrepreneurship Competition</a>
-                <li>2017/09, First Place in the <a href="https://physionet.org/content/challenge-2017/1.0.0/">18th PhysioNet/Computing in Cardiology Challenge</a> [<a href="https://github.com/hsd1503/ENCASE">code</a>] [<a href="http://www.cinc.org/archives/2017/pdf/178-245.pdf">paper</a>]</li>
-            </ul>
-
-        </div>
-
-        <hr>
-<!--        <div class="col">-->
-        <h2 id="services">Services</h2>
-<!--            <p style="color:#990000";><b> Under construction...</b></p>-->
-<!--        <div class="col-12 col-lg-8">-->
-        <ul>
-          <li>Associate Editor of <a href="https://www.nature.com/npjdigitalmed/">npj Digital Medicine</a>, <a href="https://spj.science.org/journal/hds">SPJ Health Data Science</a></li>
-          <li>Conference Reviewer of ICLR, ICML, NeurIPS, KDD, AAAI, IJCAI</li>
-          <li>External Reviewer of Center for Medical Device Evaluation (National Medical Products Administration, NMPA) of China</li>
-        </ul>
-
-
-        <hr>
-
-        <div class="col">
-            <h2 id="team">Team</h2>
-            <h4>Research Staff</h4>
-            <ul>
-              <li><a href="https://scholar.google.com/citations?user=Q0L04uYAAAAJ&hl=en">Deyun Zhang</a> (2021-)</li>
-              <li><a href="https://scholar.google.com/citations?user=QKTsRW8AAAAJ&hl=en">Shijia Geng</a> (2021-)</li>
-            </ul>
-            <h4>PostDoc</h4>
-            <ul>
-                <li>Haixue Wang (2023-2025)</li>
-            </ul>
-            <h4>Ph.D. Students</h4>
-            <ul>
-              <li><a href="https://scholar.google.com/citations?user=dfpJWQYAAAAJ&hl=en">Jun Li</a> (2026-, RA since 2022)</li>
-              <li>Jiarui Jin (2025-, co-supervise with Prof. Hongyan Li, RA since 2024)</li>
-              <li><a href="https://scholar.google.com/citations?user=TXInf0EAAAAJ&hl=en">Guangkun Nie</a> (2025-, co-supervise with Prof. Hongyan Li, RA since 2022)</li>
-              <li><a href="https://scholar.google.com/citations?user=q1IOLcUAAAAJ&hl=en">Mingke Yan</a> (2025-)</li>
-              <li>Donglin Xie (2024-)</li>
-              <li><a href="https://scholar.google.com/citations?user=djT7V_wAAAAJ&hl=en">Gongzheng Tang</a> (2023-)</li>
-            </ul>
-            <!-- <h4>Undergraduate Students</h4>
-            <ul>
-                <li>Chen Xu (2024-, Clinical Medicine, Peking University)</li>
-                <li>Zifeng Qiu (2024-, Clinical Medicine, Peking University)</li>
-                <li>Yuechao Zhao (2024-, School of Health Humanities, Peking University)</li>
-                <li>Zhuoran Kan (2024-, Institute of Medical Technology, Peking University)</li>
-                <li>Yujie Xiao (2024-, Institute of Medical Technology, Peking University)</li>
-                <li>Yuxuan Guo (2023-, Institute of Medical Technology, Peking University)</li>
-                <li>Aiminuer Aizezi (2023-, School of Public Health, Peking University)</li>
-                <li>Zenghui Lin (2023-, School of Public Health, Peking University)</li>
-                <li>Xintong Liu (2022-, Clinical Medicine, Peking University)</li>
-                <li>Yifan Xiao (2022-, Institute of Medical Technology, Peking University)</li>
-                <li>Jiabao Zhu (2022-, Institute of Medical Technology, Peking University)</li>
-            </ul> -->
-            <!-- <h4>Research Assistant</h4>
-            <ul>
-              <li>Jun Li (2022-)</li>
-            </ul> -->
-            <!-- <h4>Visiting Students</h4>
-            <ul>
-                <li>Jiarong Chen (2023-2024, master student at Sun Yat-sen University, now Ph.D. student at Shanghai Jiao Tong University)</li>
-                <li>Jiabo Chen (2023-2024, undergraduate student at Tianjin University of Technology, now master student at Nankai University)</li>
-                <li>Songchi Zhou (2022-2024, undergraduate student at Shanghai Jiao Tong University, now Ph.D. student at Tsinghua University)</li>
-                <li>Ji Deng (2022-2023, undergraduate student at Beijing University of Posts and Telecommunications, now Ph.D. student at Peking University)</li>
-                <li>Haoyang Hong (2022-2023, undergraduate student at Chinese University of Hong Kong (Shenzhen), now Ph.D. student at Imperial College London)</li>
-                <li>Jingying Ma (2021-2023, undergraduate student at Beihang University, now Ph.D. student at National University Singapore)</li>
-                <li>Wenrui Zhang (2021-2022, master student at National University Singapore, now working at Huawei)</li>
-            </ul> -->
-
-        <hr>
-
-        Last update: 2025/11 <br><br>
-
-    </div>
         </div>
     </div>
 
