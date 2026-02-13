@@ -672,16 +672,36 @@
                     
                     <p>See <a href="alumni.html">Alumni</a> page for former team members.</p>
 
-                </div>
-
-
-                    Last update: 2026/02
-                     
+                </div>                     
 
             </div>
         </div>
     </div>
 
+    <!-- 在页脚添加 -->
+<footer style="margin-top: 2rem; text-align: center; color: #666;">
+  <p>Last update: 2026/02/13</p>
+  <p><span id="counter">Loading...</span></p>
+</footer>
+
+<script>
+  // 使用 CountAPI (免费且简单)
+  const counterElement = document.getElementById('counter');
+  const countApiUrl = 'https://api.countapi.xyz';
+  const namespace = 'shendahong';
+  const key = 'website';
+  
+  // 增加计数
+  fetch(`${countApiUrl}/hit/${namespace}/${key}`)
+    .then(response => response.json())
+    .then(data => {
+      counterElement.textContent = `Page Views Since 2026/02/13: ${data.value}`;
+    })
+    .catch(error => {
+      counterElement.textContent = 'Page Views: N/A';
+      console.error('Error fetching count:', error);
+    });
+</script>
 
 </body>
 
