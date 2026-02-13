@@ -8,6 +8,17 @@
 
 <html lang="en">
 <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-835VCFSSW8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-835VCFSSW8');
+</script>
+
     <title>Shenda Hong</title>
     <link rel="icon" type="image/x-icon" href="img/pku-icon.ico">
     <meta charset="utf-8">
@@ -674,34 +685,13 @@
 
                 </div>                     
 
+
+                <p>Last update: 2026/02/13</p>
+
             </div>
         </div>
     </div>
 
-    <!-- 在页脚添加 -->
-<footer style="margin-top: 2rem; text-align: center; color: #666;">
-  <p>Last update: 2026/02/13</p>
-  <p><span id="counter">Loading...</span></p>
-</footer>
-
-<script>
-  // 使用 CountAPI (免费且简单)
-  const counterElement = document.getElementById('counter');
-  const countApiUrl = 'https://api.countapi.xyz';
-  const namespace = 'shendahong';
-  const key = 'website';
-  
-  // 增加计数
-  fetch(`${countApiUrl}/hit/${namespace}/${key}`)
-    .then(response => response.json())
-    .then(data => {
-      counterElement.textContent = `Page Views Since 2026/02/13: ${data.value}`;
-    })
-    .catch(error => {
-      counterElement.textContent = 'Page Views: N/A';
-      console.error('Error fetching count:', error);
-    });
-</script>
 
 </body>
 
